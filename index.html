@@ -809,23 +809,6 @@
     });
   });
 
-  // FAQ 아코디언
-  document.querySelectorAll('.faq-item').forEach(function(item){
-    var q = item.querySelector('.faq-q');
-    var a = item.querySelector('.faq-a');
-    q.addEventListener('click', function(){
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function(other){
-        other.classList.remove('open');
-        other.querySelector('.faq-a').style.maxHeight = null;
-      });
-      if(!isOpen){
-        item.classList.add('open');
-        a.style.maxHeight = a.scrollHeight + 'px';
-      }
-    });
-  });
-
   // ── Find Your Model 추천 로직 ──
   var PROGRAM_INFO = {
     prep:        { name: 'Prep Academy',            sub: '프리미엄 국제학교 대비 학습 프로그램', programs: 'Reading + Writing + Academic Skills' },
