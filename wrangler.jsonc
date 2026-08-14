@@ -1,0 +1,16 @@
+{
+  // ─────────────────────────────────────────────────────────────
+  // JOHN EDUCATION GROUP — Cloudflare 독립 배포 설정
+  //
+  // ⚠️ 매우 중요: 아래 "name" 은 반드시 다른 사이트와 달라야 합니다.
+  //    특히 "blossom-books", "john-prep-tutoring" 과 절대 겹치면 안 됩니다.
+  //    Cloudflare 는 이 name 으로 서버(Worker)를 구분하므로, 이름이 같으면
+  //    서로의 사이트를 덮어써 버립니다. 이 저장소는 오직 "john-education-group"
+  //    서버에만 배포되어야 합니다.
+  // ─────────────────────────────────────────────────────────────
+  "name": "john-education-group",
+  "compatibility_date": "2026-08-03",
+  "assets": {
+    "directory": "./"
+  }
+}
