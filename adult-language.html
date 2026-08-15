@@ -21,9 +21,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2310233F'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-weight='800' font-size='17' fill='%23D96C3D' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F7F3EA'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%2326231F' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E" />
 <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -32,33 +32,33 @@
 <header id="hdr">
   <div class="wrap nav">
     <a href="index.html" class="logo" aria-label="John Education Group">
-      <span class="mark">J</span>
-      <span class="txt"><b>존 에듀케이션 그룹</b><span>Education Group</span></span>
+      <b>JOHN EDUCATION GROUP</b>
+      <span>Private Education &amp; Academy Development</span>
     </a>
     <nav class="menu">
-      <a href="index.html#brands">프로그램</a>
-      <a href="index.html#business-flexibility">사업모델</a>
-      <a href="index.html#why-us">왜 우리인가</a>
-      <a href="franchise.html">프랜차이즈</a>
-      <a href="academy-owners.html">학원 원장님께</a>
-      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#portfolio">Brands</a>
+      <a href="index.html#what-we-build">Our System</a>
+      <a href="index.html#business-flexibility">Business Models</a>
+      <a href="academy-owners.html">For Academy Owners</a>
+      <a href="franchise.html">Franchise</a>
     </nav>
     <div class="nav-cta">
-      <a href="index.html#find-your-model" class="btn btn-ghost">브랜드 찾기</a>
-      <a href="#contact" class="btn btn-primary">상담 신청</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Private Consultation
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
     </div>
     <button class="burger" id="burger" aria-label="메뉴 열기">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html#brands">프로그램</a>
-    <a href="index.html#business-flexibility">사업모델</a>
-    <a href="index.html#why-us">왜 우리인가</a>
-    <a href="franchise.html">프랜차이즈</a>
-    <a href="academy-owners.html">학원 원장님께</a>
+    <a href="index.html#portfolio">Brands</a>
+    <a href="index.html#what-we-build">Our System</a>
+    <a href="index.html#business-flexibility">Business Models</a>
+    <a href="academy-owners.html">For Academy Owners</a>
+    <a href="franchise.html">Franchise</a>
     <a href="index.html#faq">FAQ</a>
-    <a href="#contact" class="btn btn-primary btn-block">상담 신청</a>
+    <a href="#contact" class="btn btn-primary btn-block">Request Private Consultation</a>
   </div>
 </header>
 
@@ -81,7 +81,7 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21a8 8 0 1 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
         대상 학습자 · 성인 · 직장인
       </div>
-      <div class="hero-actions">
+      <div class="hero-cta-row">
         <a href="#contact" class="btn btn-primary">가맹 상담 신청
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -89,13 +89,14 @@
       </div>
     </div>
     <div class="reveal">
-      <div class="photo"><span class="cap"><b>Adult Language Academy</b>성인 1:1 프라이빗 레슨 공간</span></div>
+      <div class="photo"><div class="photo-inner-line"></div></div>
+      <div class="photo-cap"><p class="pc-eyebrow">Adult Language Academy</p><p>성인 1:1 프라이빗 레슨 공간</p></div>
     </div>
   </div>
 </section>
 
 <!-- ═══ CURRICULUM TRACKS ═══ -->
-<section class="block bg-ivory" id="curriculum">
+<section class="block bg-cream" id="curriculum">
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">Curriculum Tracks</p>
@@ -148,7 +149,7 @@
 </section>
 
 <!-- ═══ EXPLORE OTHER BRANDS ═══ -->
-<section class="block bg-ivory" id="explore-brands">
+<section class="block bg-cream" id="explore-brands">
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">Explore Our Brands</p>
@@ -211,12 +212,12 @@
 </section>
 
 <!-- ═══ FINAL CTA ═══ -->
-<section class="bg-navy" style="position:relative;overflow:hidden">
+<section class="bg-espresso" style="position:relative;overflow:hidden">
   <div class="wrap final-cta reveal" style="position:relative">
-    <p class="eyebrow">Start Your Academy</p>
+    <p class="eyebrow on-dark">Start Your Academy</p>
     <h2>당신의 지역에<br />Adult Language Academy를 시작하세요.</h2>
     <p>처음 시작하는 성인 어학 사업부터 기존 학원의 비즈니스 영어 확장까지 함께 설계합니다.</p>
-    <div class="hero-actions">
+    <div class="hero-cta-row">
       <a href="#contact" class="btn btn-primary">가맹 상담 신청
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
@@ -232,24 +233,21 @@
       <p class="eyebrow">Franchise Inquiry</p>
       <h2>가맹 상담이 필요하신가요?</h2>
       <p>운영 지역, 공간, 관심 브랜드를 남겨주시면 담당 컨설턴트가 확인 후 가장 알맞은 모델을 안내해 드립니다.</p>
-      <div class="info-item">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <div><div class="l">가맹 상담 전화</div><div class="v">[전화번호 입력]</div></div>
+      <div class="info-item" data-field="phone">
+        <div><div class="l">Phone</div><div class="v" data-field-value></div></div>
       </div>
-      <div class="info-item">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-        <div><div class="l">이메일</div><div class="v">[이메일 입력]</div></div>
+      <div class="info-item" data-field="email">
+        <div><div class="l">Email</div><div class="v" data-field-value></div></div>
       </div>
-      <div class="info-item">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div><div class="l">본사 소재지</div><div class="v">[본사 주소 입력]</div></div>
+      <div class="info-item" data-field="address">
+        <div><div class="l">Office</div><div class="v" data-field-value></div></div>
       </div>
     </div>
 
     <!-- ⚠️ action 값을 존 에듀케이션 그룹 전용 Formspree 주소로 바꾸면 이메일로 접수됩니다. -->
-    <div class="reveal">
-      <form class="card" id="franchiseForm" action="https://formspree.io/f/xxxxxxxx" method="POST">
-        <div class="form-err" id="formErr">필수 항목(이름, 연락처, 이메일, 개인정보 동의)을 모두 입력해 주세요.</div>
+    <div class="reveal form-wrap">
+      <form class="franchise-form card" action="https://formspree.io/f/xxxxxxxx" method="POST">
+        <div class="form-err">필수 항목(이름, 연락처, 이메일, 개인정보 동의)을 모두 입력해 주세요.</div>
 
         <div class="row2">
           <div class="fld">
@@ -347,12 +345,26 @@
         <p class="form-note">상담 신청 후 영업일 기준 1~2일 이내 담당 컨설턴트가 연락드립니다.</p>
       </form>
 
-      <div class="card success-screen" id="successScreen">
+      <div class="card success-screen">
         <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
         <h3>상담 신청이 완료되었습니다.</h3>
         <p>남겨주신 정보를 바탕으로 담당 컨설턴트가 확인 후<br />영업일 기준 1~2일 이내에 연락드리겠습니다.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ═══ TRUST SECTION ═══ -->
+<section class="trust-band bg-cream">
+  <div class="wrap trust-grid">
+    <span class="trust-item has-value"><span class="k">Company</span><span data-field-value>존 에듀케이션 그룹</span></span>
+    <span class="trust-item" data-field="representative"><span class="k">Representative</span><span data-field-value></span></span>
+    <span class="trust-item" data-field="bizRegNo"><span class="k">Business Registration No.</span><span data-field-value></span></span>
+    <span class="trust-item" data-field="address"><span class="k">Office</span><span data-field-value></span></span>
+    <span class="trust-item" data-field="phone"><span class="k">Phone</span><span data-field-value></span></span>
+    <span class="trust-item" data-field="email"><span class="k">Email</span><span data-field-value></span></span>
+    <a class="trust-item" data-field="privacyUrl" data-field-href href="#"><span class="k">Legal</span><span data-field-value>Privacy Policy</span></a>
+    <a class="trust-item" data-field="termsUrl" data-field-href href="#"><span class="k">Legal</span><span data-field-value>Terms</span></a>
   </div>
 </section>
 </main>
@@ -361,13 +373,11 @@
 <footer>
   <div class="wrap">
     <div class="foot-top">
-      <div class="foot-brand">
-        <div class="logo">
-          <span class="mark">J</span>
-          <span class="txt"><b>존 에듀케이션 그룹</b><span>Education Group</span></span>
+      <div class="foot-wordmark"><span>JOHN</span><span>EDUCATION</span><span>GROUP</span></div>
+      <div class="foot-cols">
+        <div class="foot-brand">
+          <p>Prep Academy부터 Early Childhood English, Elementary English, Adult Language, Music Academy까지 — 교육을 하나의 사업으로 설계하는 프라이빗 교육 그룹입니다.</p>
         </div>
-        <p>Prep Academy부터 Early Childhood English, Elementary English, Adult Language, Music Academy까지 — 교육을 하나의 사업으로 설계하는 교육 그룹입니다.</p>
-      </div>
       <div class="foot-col">
         <h5>Programs</h5>
         <a href="prep-academy.html">Prep Academy</a>
@@ -388,19 +398,21 @@
         <a href="#contact">상담 신청</a>
         <a href="index.html#find-your-model">브랜드 찾기</a>
       </div>
+      </div>
     </div>
     <div class="foot-bottom">
       <span>© <span id="yr"></span> John Education Group. All rights reserved.</span>
-      <span>[사업자 정보 입력 예정]</span>
     </div>
   </div>
 </footer>
 
+<!-- ═══ MOBILE FIXED CTA ═══ -->
 <div class="mobile-cta">
-  <a href="#contact" class="btn btn-primary">가맹 상담</a>
-  <a href="tel:0000000000" class="btn btn-ghost">전화 문의</a>
+  <a href="#contact" class="btn btn-primary">Consultation</a>
+  <a href="index.html#partnership" class="btn btn-ghost">Partnership Guide</a>
 </div>
 
+<script src="assets/config.js"></script>
 <script src="assets/site.js"></script>
 </body>
 </html>
