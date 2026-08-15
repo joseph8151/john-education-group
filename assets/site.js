@@ -1,3 +1,15 @@
+// 연락처/사업자 정보 렌더링 (assets/config.js — 값이 없는 항목은 노출하지 않음)
+if (typeof SITE_CONFIG !== 'undefined') {
+  document.querySelectorAll('[data-field]').forEach(function(el){
+    var val = SITE_CONFIG[el.dataset.field];
+    if (!val) return;
+    var target = el.querySelector('[data-field-value]');
+    if (target) { target.textContent = val; } else { el.textContent = val; }
+    if (el.tagName === 'A' && el.dataset.fieldHref) { el.href = val; }
+    el.classList.add('has-value');
+  });
+}
+
 // 헤더 스크롤 그림자
 var hdr = document.getElementById('hdr');
 if (hdr) {
@@ -37,18 +49,18 @@ document.querySelectorAll('.faq-item').forEach(function(item){
   });
 });
 
-// 상담 신청 폼 (가맹 문의 폼이 있는 모든 페이지에서 공통 사용)
-var form = document.getElementById('franchiseForm');
-if (form) {
-  var formErr = document.getElementById('formErr');
+// 상담/파트너십 가이드 신청 폼 — 한 페이지에 여러 개(.franchise-form) 있어도 각각 독립 동작
+document.querySelectorAll('.franchise-form').forEach(function(form){
+  var formErr = form.querySelector('.form-err');
+  var successScreen = form.parentElement.querySelector('.success-screen');
   form.addEventListener('submit', function(e){
     e.preventDefault();
     if(!form.checkValidity()){
-      formErr.style.display = 'block';
+      if (formErr) formErr.style.display = 'block';
       form.reportValidity();
       return;
     }
-    formErr.style.display = 'none';
+    if (formErr) formErr.style.display = 'none';
 
     var submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
@@ -60,19 +72,21 @@ if (form) {
     }).then(function(res){
       if(res.ok){
         form.style.display = 'none';
-        document.getElementById('successScreen').style.display = 'block';
-      } else {
+        if (successScreen) successScreen.style.display = 'block';
+      } else if (formErr) {
         formErr.textContent = '신청 접수 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.';
         formErr.style.display = 'block';
         submitBtn.disabled = false;
       }
     }).catch(function(){
-      formErr.textContent = '신청 접수 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.';
-      formErr.style.display = 'block';
+      if (formErr) {
+        formErr.textContent = '신청 접수 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.';
+        formErr.style.display = 'block';
+      }
       submitBtn.disabled = false;
     });
   });
-}
+});
 
 // 연도
 var yr = document.getElementById('yr');
