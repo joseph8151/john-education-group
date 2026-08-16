@@ -510,6 +510,14 @@ footer .trust-item .k{color:var(--gold)}
 .vision-close{text-align:center;margin-top:44px;font-size:14.5px;color:var(--muted);line-height:1.9}
 .vision-close em{font-family:var(--serif);font-style:italic;color:var(--gold-2);font-size:17px}
 
+/* ── testimonials ── */
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.testi-item{padding:32px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.testi-item.testi-hidden{display:none}
+.testi-item .tq{font-family:var(--serif);font-style:italic;font-size:15.5px;color:var(--espresso);line-height:1.75;margin-bottom:16px}
+.testi-item .ta{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold-2);font-weight:600}
+.testi-more-wrap{text-align:center;margin-top:44px}
+
 /* ── mobile fixed cta ── */
 .mobile-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--cream);border-top:1px solid var(--line);padding:12px 16px;gap:10px}
 .mobile-cta a{flex:1;justify-content:center;padding:14px 8px;min-height:48px;font-size:11.5px;letter-spacing:.03em;white-space:nowrap}
@@ -529,6 +537,7 @@ footer .trust-item .k{color:var(--gold)}
   .ts-stat{min-width:0}
   .ts-label{white-space:normal}
   .aud-grid{grid-template-columns:1fr 1fr}
+  .testi-grid{grid-template-columns:1fr}
   .dream-split{grid-template-columns:1fr}
   .compare-row,.compare-head{grid-template-columns:1fr}
   .compare-row .c-basic,.compare-head .ch-basic{border-right:none;border-bottom:1px solid var(--line)}
