@@ -21,7 +21,8 @@
 | `contact.html` | 상담 신청 전용 페이지 |
 | `assets/config.js` | **관리자 설정 파일** — 전화번호, 폼 접수 주소, 사업자 정보 |
 | `assets/styles.css` | 전 페이지 공용 디자인 시스템 |
-| `assets/site.js` | 헤더 / 모바일 메뉴 / 스크롤 등장 / FAQ / 전화링크 주입 / 플로팅 CTA / 상담폼 |
+| `assets/site.js` | 헤더 / 모바일 메뉴 / 스크롤 등장 / FAQ / 전화링크 주입 / 플로팅 CTA / 상담폼 / 사례·후기 렌더링 |
+| `assets/images/*.svg` | 커스텀 라인아트 일러스트 11종 (Champagne/Charcoal/Gold 팔레트) |
 | `robots.txt` · `sitemap.xml` | 검색엔진용 |
 | `wrangler.jsonc` · `.assetsignore` | Cloudflare 독립 배포 설정 |
 

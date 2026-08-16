@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#F6F1E8"/>
+  <!-- floor -->
+  <line x1="0" y1="248" x2="400" y2="248" stroke="#202224" stroke-width="2"/>
+  <!-- small child sitting -->
+  <circle cx="150" cy="140" r="24" stroke="#202224" stroke-width="2.5"/>
+  <path d="M128 140 q22 -30 44 0" stroke="#202224" stroke-width="2.5"/>
+  <circle cx="140" cy="138" r="2.5" fill="#202224"/>
+  <circle cx="160" cy="138" r="2.5" fill="#202224"/>
+  <path d="M140 150 q10 6 20 0" stroke="#202224" stroke-width="2" stroke-linecap="round"/>
+  <path d="M118 246 q4 -60 32 -64 q28 4 32 64 z" fill="#C6A76A" opacity=".9" stroke="#202224" stroke-width="2"/>
+  <!-- alphabet blocks -->
+  <g stroke="#202224" stroke-width="2">
+    <rect x="220" y="196" width="40" height="40" fill="#A8884A"/>
+    <rect x="264" y="196" width="40" height="40" fill="#202224"/>
+    <rect x="242" y="154" width="40" height="40" fill="#C6A76A"/>
+  </g>
+  <text x="240" y="223" font-family="Georgia,serif" font-size="22" fill="#F6F1E8" text-anchor="middle">A</text>
+  <text x="284" y="223" font-family="Georgia,serif" font-size="22" fill="#F6F1E8" text-anchor="middle">B</text>
+  <text x="262" y="181" font-family="Georgia,serif" font-size="22" fill="#F6F1E8" text-anchor="middle">C</text>
+  <!-- teddy bear simple -->
+  <circle cx="90" cy="210" r="16" stroke="#202224" stroke-width="2" fill="#F6F1E8"/>
+  <circle cx="78" cy="196" r="7" stroke="#202224" stroke-width="1.8" fill="#F6F1E8"/>
+  <circle cx="104" cy="196" r="7" stroke="#202224" stroke-width="1.8" fill="#F6F1E8"/>
+  <circle cx="90" cy="212" r="9" stroke="#202224" stroke-width="1.5" fill="none"/>
+  <!-- floating stars -->
+  <path d="M330 90 l4 9 l10 1 l-7 7 l2 10 l-9 -5 l-9 5 l2 -10 l-7 -7 l10 -1 z" fill="#C6A76A" opacity=".85"/>
+  <path d="M60 90 l3 6 l7 1 l-5 5 l1 7 l-6 -3 l-6 3 l1 -7 l-5 -5 l7 -1 z" fill="#A8884A" opacity=".85"/>
+</svg>

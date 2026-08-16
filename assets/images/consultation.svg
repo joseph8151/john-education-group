@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" fill="none">
+  <rect width="400" height="360" fill="#E9E0D2"/>
+  <line x1="0" y1="300" x2="400" y2="300" stroke="#202224" stroke-width="2"/>
+  <!-- table -->
+  <line x1="60" y1="252" x2="340" y2="252" stroke="#202224" stroke-width="2.5"/>
+  <line x1="80" y1="252" x2="80" y2="300" stroke="#202224" stroke-width="2.5"/>
+  <line x1="320" y1="252" x2="320" y2="300" stroke="#202224" stroke-width="2.5"/>
+  <!-- consultant figure -->
+  <circle cx="132" cy="150" r="25" stroke="#202224" stroke-width="2.5"/>
+  <path d="M100 250 q4 -70 32 -76 q28 6 32 76 z" fill="#202224" stroke="#202224" stroke-width="2"/>
+  <!-- academy-owner figure -->
+  <circle cx="268" cy="150" r="25" stroke="#202224" stroke-width="2.5"/>
+  <path d="M236 250 q4 -70 32 -76 q28 6 32 76 z" fill="#C6A76A" opacity=".92" stroke="#202224" stroke-width="2"/>
+  <!-- clipboard with growth chart between them -->
+  <rect x="168" y="220" width="64" height="60" rx="3" fill="#F6F1E8" stroke="#202224" stroke-width="2"/>
+  <rect x="188" y="216" width="24" height="10" rx="2" fill="#202224"/>
+  <polyline points="178,268 190,250 202,258 216,236 224,242" fill="none" stroke="#202224" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- speech / idea marks -->
+  <path d="M100 96 q18 -16 36 -2" stroke="#202224" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <circle cx="300" cy="92" r="3" fill="#C6A76A"/>
+  <circle cx="312" cy="86" r="2" fill="#202224"/>
+</svg>

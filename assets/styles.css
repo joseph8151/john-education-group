@@ -604,6 +604,17 @@ footer{background:var(--charcoal);color:var(--ivory);padding:96px 0 44px}
   footer{padding-bottom:110px}
 }
 
+/* 초협소 화면(구형 iPhone SE 등) — 로고 2줄 + 버거가 넘치지 않도록
+   (main 브랜치의 모바일 오버플로 수정을 새 구조에 맞춰 이어받음) */
+@media (max-width:360px){
+  .logo span{display:none}
+  .logo b{font-size:11.5px;letter-spacing:.1em}
+  .nav{gap:12px;height:66px}
+  .mobile-cta a{font-size:12px;padding:14px 6px;gap:6px}
+  /* Before/After 사이 배지 — nowrap 이면 그리드 트랙을 밀어내 가로 스크롤이 생김 */
+  .ba-mid .bm-badge{white-space:normal;text-align:center;letter-spacing:.14em;font-size:9.5px;padding:0 8px}
+}
+
 @media (max-width:680px){
   .wrap,.wrap-narrow{padding:0 22px}
   .hero{padding:64px 0 66px}
@@ -726,3 +737,19 @@ footer{background:var(--charcoal);color:var(--ivory);padding:96px 0 44px}
   .tl-row .tl-when{font-size:17px}
   .deliver-note{padding:26px 22px}
 }
+
+/* ── 브랜드 모델 / 섹션 일러스트레이션 ── */
+.dive-art{margin-top:24px;max-width:230px;border:1px solid var(--line-gold);border-radius:3px;
+  overflow:hidden;background:var(--beige);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+/* 일러스트가 있는 행은 좌우 높이 차가 크므로 오른쪽 열을 세로 중앙에 맞춤.
+   :has() 미지원 브라우저에서는 기본값(align-items:start)으로 자연스럽게 폴백됩니다. */
+.dive-row:has(.dive-art){align-items:center}
+.dive-art img{width:100%;height:auto;display:block}
+.dive-row:hover .dive-art{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+
+.spec-art{margin-top:34px;max-width:340px;border:1px solid var(--line-gold);border-radius:3px;
+  overflow:hidden;background:var(--beige)}
+.spec-art img{width:100%;height:auto;display:block}
+
+@media (max-width:1024px){ .dive-art{max-width:200px} }
+@media (max-width:680px){ .dive-art,.spec-art{max-width:100%} }
