@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
-  <rect width="400" height="300" fill="#E7EFF3"/>
+  <rect width="400" height="300" fill="#E9E0D2"/>
   <!-- piano body -->
-  <path d="M40 190 h320 l-24 60 h-272 z" fill="#22262C"/>
-  <rect x="70" y="150" width="260" height="46" fill="#22262C"/>
+  <path d="M40 190 h320 l-24 60 h-272 z" fill="#202224"/>
+  <rect x="70" y="150" width="260" height="46" fill="#202224"/>
   <!-- keys -->
-  <g stroke="#22262C" stroke-width="1.2">
-    <rect x="76" y="150" width="248" height="40" fill="#F3EEE1"/>
+  <g stroke="#202224" stroke-width="1.2">
+    <rect x="76" y="150" width="248" height="40" fill="#F6F1E8"/>
     <line x1="107" y1="150" x2="107" y2="190"/>
     <line x1="138" y1="150" x2="138" y2="190"/>
     <line x1="169" y1="150" x2="169" y2="190"/>
@@ -14,7 +14,7 @@
     <line x1="262" y1="150" x2="262" y2="190"/>
     <line x1="293" y1="150" x2="293" y2="190"/>
   </g>
-  <g fill="#22262C">
+  <g fill="#202224">
     <rect x="96" y="150" width="14" height="26"/>
     <rect x="126" y="150" width="14" height="26"/>
     <rect x="180" y="150" width="14" height="26"/>
@@ -23,19 +23,19 @@
     <rect x="282" y="150" width="14" height="26"/>
   </g>
   <!-- hand simplified playing -->
-  <path d="M140 150 q30 -30 70 -6 q6 4 2 10 l-4 4 q-30 -20 -62 2 q-8 4 -6 -10z" fill="#6E9CC0" opacity=".9" stroke="#22262C" stroke-width="1.5"/>
+  <path d="M140 150 q30 -30 70 -6 q6 4 2 10 l-4 4 q-30 -20 -62 2 q-8 4 -6 -10z" fill="#A8884A" opacity=".9" stroke="#202224" stroke-width="1.5"/>
   <!-- floating musical notes -->
-  <g stroke="#3E6E8E" stroke-width="2.4" fill="#3E6E8E">
+  <g stroke="#202224" stroke-width="2.4" fill="#202224">
     <circle cx="90" cy="90" r="8"/>
     <line x1="98" y1="90" x2="98" y2="52"/>
     <path d="M98 52 q14 0 14 12" fill="none"/>
   </g>
-  <g stroke="#D9A62E" stroke-width="2.2" fill="#D9A62E">
+  <g stroke="#C6A76A" stroke-width="2.2" fill="#C6A76A">
     <circle cx="300" cy="70" r="7"/>
     <line x1="307" y1="70" x2="307" y2="38"/>
     <path d="M307 38 q12 -2 12 10" fill="none"/>
   </g>
-  <g stroke="#22262C" stroke-width="1.8" fill="none">
+  <g stroke="#202224" stroke-width="1.8" fill="none">
     <circle cx="330" cy="110" r="6"/>
     <line x1="336" y1="110" x2="336" y2="86"/>
   </g>

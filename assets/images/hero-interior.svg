@@ -1,39 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 470" fill="none">
-  <rect width="400" height="470" fill="#E7EFF3"/>
+  <rect width="400" height="470" fill="#E9E0D2"/>
   <!-- window -->
-  <rect x="48" y="46" width="150" height="190" stroke="#22262C" stroke-width="2.5"/>
-  <line x1="123" y1="46" x2="123" y2="236" stroke="#22262C" stroke-width="2"/>
-  <line x1="48" y1="141" x2="198" y2="141" stroke="#22262C" stroke-width="2"/>
+  <rect x="48" y="46" width="150" height="190" stroke="#202224" stroke-width="2.5"/>
+  <line x1="123" y1="46" x2="123" y2="236" stroke="#202224" stroke-width="2"/>
+  <line x1="48" y1="141" x2="198" y2="141" stroke="#202224" stroke-width="2"/>
   <!-- soft light wash in window -->
-  <rect x="50" y="48" width="71" height="91" fill="#F4EFD9" opacity=".55"/>
-  <rect x="125" y="48" width="71" height="91" fill="#F4EFD9" opacity=".4"/>
+  <rect x="50" y="48" width="71" height="91" fill="#F6F1E8" opacity=".55"/>
+  <rect x="125" y="48" width="71" height="91" fill="#F6F1E8" opacity=".4"/>
   <!-- bookshelf -->
-  <rect x="240" y="60" width="112" height="176" stroke="#22262C" stroke-width="2.5"/>
-  <line x1="240" y1="104" x2="352" y2="104" stroke="#22262C" stroke-width="2"/>
-  <line x1="240" y1="148" x2="352" y2="148" stroke="#22262C" stroke-width="2"/>
-  <line x1="240" y1="192" x2="352" y2="192" stroke="#22262C" stroke-width="2"/>
-  <rect x="248" y="68" width="10" height="30" fill="#3E6E8E"/>
-  <rect x="262" y="68" width="10" height="30" fill="#6E9CC0"/>
-  <rect x="276" y="68" width="10" height="30" fill="#D9A62E"/>
-  <rect x="290" y="72" width="10" height="26" fill="#3E6E8E"/>
-  <rect x="248" y="112" width="10" height="30" fill="#6E9CC0"/>
-  <rect x="262" y="112" width="10" height="30" fill="#3E6E8E"/>
-  <rect x="276" y="116" width="10" height="26" fill="#D9A62E"/>
-  <rect x="248" y="156" width="10" height="30" fill="#3E6E8E"/>
-  <rect x="262" y="156" width="10" height="30" fill="#6E9CC0"/>
+  <rect x="240" y="60" width="112" height="176" stroke="#202224" stroke-width="2.5"/>
+  <line x1="240" y1="104" x2="352" y2="104" stroke="#202224" stroke-width="2"/>
+  <line x1="240" y1="148" x2="352" y2="148" stroke="#202224" stroke-width="2"/>
+  <line x1="240" y1="192" x2="352" y2="192" stroke="#202224" stroke-width="2"/>
+  <rect x="248" y="68" width="10" height="30" fill="#202224"/>
+  <rect x="262" y="68" width="10" height="30" fill="#A8884A"/>
+  <rect x="276" y="68" width="10" height="30" fill="#C6A76A"/>
+  <rect x="290" y="72" width="10" height="26" fill="#202224"/>
+  <rect x="248" y="112" width="10" height="30" fill="#A8884A"/>
+  <rect x="262" y="112" width="10" height="30" fill="#202224"/>
+  <rect x="276" y="116" width="10" height="26" fill="#C6A76A"/>
+  <rect x="248" y="156" width="10" height="30" fill="#202224"/>
+  <rect x="262" y="156" width="10" height="30" fill="#A8884A"/>
   <!-- desk + chair -->
-  <line x1="40" y1="360" x2="180" y2="360" stroke="#22262C" stroke-width="2.5"/>
-  <line x1="52" y1="360" x2="52" y2="404" stroke="#22262C" stroke-width="2.5"/>
-  <line x1="168" y1="360" x2="168" y2="404" stroke="#22262C" stroke-width="2.5"/>
-  <rect x="80" y="336" width="46" height="24" stroke="#22262C" stroke-width="2"/>
-  <line x1="88" y1="336" x2="88" y2="360" stroke="#22262C" stroke-width="1.5"/>
-  <line x1="102" y1="336" x2="102" y2="360" stroke="#22262C" stroke-width="1.5"/>
-  <line x1="116" y1="336" x2="116" y2="360" stroke="#22262C" stroke-width="1.5"/>
+  <line x1="40" y1="360" x2="180" y2="360" stroke="#202224" stroke-width="2.5"/>
+  <line x1="52" y1="360" x2="52" y2="404" stroke="#202224" stroke-width="2.5"/>
+  <line x1="168" y1="360" x2="168" y2="404" stroke="#202224" stroke-width="2.5"/>
+  <rect x="80" y="336" width="46" height="24" stroke="#202224" stroke-width="2"/>
+  <line x1="88" y1="336" x2="88" y2="360" stroke="#202224" stroke-width="1.5"/>
+  <line x1="102" y1="336" x2="102" y2="360" stroke="#202224" stroke-width="1.5"/>
+  <line x1="116" y1="336" x2="116" y2="360" stroke="#202224" stroke-width="1.5"/>
   <!-- potted plant -->
-  <path d="M300 300 C280 280 280 250 300 236 C320 250 320 280 300 300 Z" fill="#3E6E8E" opacity=".85"/>
-  <path d="M300 300 C288 288 290 268 300 258" stroke="#22262C" stroke-width="1.5"/>
-  <path d="M300 300 C312 288 310 268 300 258" stroke="#22262C" stroke-width="1.5"/>
-  <path d="M282 300 h36 l-6 34 h-24 z" stroke="#22262C" stroke-width="2" fill="#F3EEE1"/>
+  <path d="M300 300 C280 280 280 250 300 236 C320 250 320 280 300 300 Z" fill="#202224" opacity=".85"/>
+  <path d="M300 300 C288 288 290 268 300 258" stroke="#202224" stroke-width="1.5"/>
+  <path d="M300 300 C312 288 310 268 300 258" stroke="#202224" stroke-width="1.5"/>
+  <path d="M282 300 h36 l-6 34 h-24 z" stroke="#202224" stroke-width="2" fill="#F6F1E8"/>
   <!-- floor line -->
-  <line x1="0" y1="404" x2="400" y2="404" stroke="#22262C" stroke-width="2"/>
+  <line x1="0" y1="404" x2="400" y2="404" stroke="#202224" stroke-width="2"/>
 </svg>

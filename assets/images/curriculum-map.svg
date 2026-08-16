@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" fill="none">
-  <rect width="300" height="400" fill="#E7EFF3"/>
+  <rect width="300" height="400" fill="#E9E0D2"/>
   <!-- open book -->
-  <path d="M40 130 q70 -24 110 0 v190 q-70 -22 -110 0 z" fill="#F3EEE1" stroke="#22262C" stroke-width="2.2"/>
-  <path d="M260 130 q-70 -24 -110 0 v190 q70 -22 110 0 z" fill="#F3EEE1" stroke="#22262C" stroke-width="2.2"/>
-  <line x1="150" y1="130" x2="150" y2="320" stroke="#22262C" stroke-width="1.6"/>
+  <path d="M40 130 q70 -24 110 0 v190 q-70 -22 -110 0 z" fill="#F6F1E8" stroke="#202224" stroke-width="2.2"/>
+  <path d="M260 130 q-70 -24 -110 0 v190 q70 -22 110 0 z" fill="#F6F1E8" stroke="#202224" stroke-width="2.2"/>
+  <line x1="150" y1="130" x2="150" y2="320" stroke="#202224" stroke-width="1.6"/>
   <!-- route/flow line across pages -->
-  <path d="M60 180 q40 -10 70 6 q30 16 70 -4 q30 -14 60 6" stroke="#3E6E8E" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-  <circle cx="60" cy="180" r="5" fill="#3E6E8E"/>
-  <circle cx="130" cy="186" r="5" fill="#6E9CC0"/>
-  <circle cx="200" cy="182" r="5" fill="#D9A62E"/>
-  <circle cx="260" cy="188" r="5" fill="#3E6E8E"/>
+  <path d="M60 180 q40 -10 70 6 q30 16 70 -4 q30 -14 60 6" stroke="#202224" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <circle cx="60" cy="180" r="5" fill="#202224"/>
+  <circle cx="130" cy="186" r="5" fill="#A8884A"/>
+  <circle cx="200" cy="182" r="5" fill="#C6A76A"/>
+  <circle cx="260" cy="188" r="5" fill="#202224"/>
   <!-- text lines -->
-  <line x1="60" y1="230" x2="120" y2="228" stroke="#22262C" stroke-width="1.2" opacity=".5"/>
-  <line x1="60" y1="248" x2="110" y2="246" stroke="#22262C" stroke-width="1.2" opacity=".5"/>
-  <line x1="180" y1="230" x2="240" y2="228" stroke="#22262C" stroke-width="1.2" opacity=".5"/>
-  <line x1="180" y1="248" x2="230" y2="246" stroke="#22262C" stroke-width="1.2" opacity=".5"/>
+  <line x1="60" y1="230" x2="120" y2="228" stroke="#202224" stroke-width="1.2" opacity=".5"/>
+  <line x1="60" y1="248" x2="110" y2="246" stroke="#202224" stroke-width="1.2" opacity=".5"/>
+  <line x1="180" y1="230" x2="240" y2="228" stroke="#202224" stroke-width="1.2" opacity=".5"/>
+  <line x1="180" y1="248" x2="230" y2="246" stroke="#202224" stroke-width="1.2" opacity=".5"/>
   <!-- map pin -->
-  <path d="M150 90 q18 0 18 18 q0 18 -18 30 q-18 -12 -18 -30 q0 -18 18 -18z" fill="#D9A62E" stroke="#22262C" stroke-width="1.8"/>
-  <circle cx="150" cy="107" r="6" fill="#F3EEE1"/>
+  <path d="M150 90 q18 0 18 18 q0 18 -18 30 q-18 -12 -18 -30 q0 -18 18 -18z" fill="#C6A76A" stroke="#202224" stroke-width="1.8"/>
+  <circle cx="150" cy="107" r="6" fill="#F6F1E8"/>
 </svg>
