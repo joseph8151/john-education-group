@@ -632,3 +632,97 @@ footer{background:var(--charcoal);color:var(--ivory);padding:96px 0 44px}
   .statement{padding:80px 0}
   .final-cta .fc-actions .btn{width:100%}
 }
+
+/* ══════════════════════════════════════════════════
+   CASES / TRUST — 산출물 · 진행 방식 · 사례 · 후기 · 컨설턴트
+   ══════════════════════════════════════════════════ */
+
+/* 데이터가 비어 있을 때 섹션 전체 숨김 (site.js 가 토글) */
+[data-collapsible][hidden]{display:none !important}
+
+/* ── 산출물 (Deliverables) ── */
+.deliver-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.deliver-card{background:var(--white);border:1px solid var(--line-soft);border-radius:3px;padding:40px 34px;
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.deliver-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.deliver-card .dc-head{display:flex;align-items:center;gap:14px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.deliver-card .dc-icon{width:38px;height:38px;border:1px solid var(--line-gold);border-radius:50%;display:flex;
+  align-items:center;justify-content:center;color:var(--gold-deep);flex-shrink:0}
+.deliver-card h4{font-size:16.5px;font-weight:700;letter-spacing:-.005em}
+.deliver-card ul{margin-top:20px;display:flex;flex-direction:column;gap:11px}
+.deliver-card ul li{display:flex;gap:11px;font-size:13.8px;color:var(--muted);line-height:1.62}
+.deliver-card ul li svg{flex-shrink:0;margin-top:5px;color:var(--gold)}
+.deliver-note{margin-top:44px;padding:30px 36px;border:1px solid var(--line-gold);border-radius:3px;
+  font-size:14.5px;color:var(--muted);line-height:1.85;text-align:center}
+.deliver-note b{color:var(--charcoal);font-weight:700}
+
+/* ── 진행 방식 타임라인 ── */
+.timeline{border-top:1px solid var(--line-dark)}
+.tl-row{display:grid;grid-template-columns:150px 1fr;gap:40px;padding:34px 0;border-bottom:1px solid var(--line-dark);align-items:baseline}
+.tl-row .tl-when{font-family:var(--serif);font-size:20px;color:var(--gold);letter-spacing:.02em}
+.tl-row h4{font-size:16.5px;font-weight:700;color:var(--ivory);letter-spacing:-.005em}
+.tl-row p{font-size:13.8px;color:var(--muted-light);line-height:1.8;margin-top:9px;max-width:640px}
+.tl-caption{margin-top:34px;font-size:13px;color:rgba(246,241,232,.5);line-height:1.8}
+
+/* ── 컨설팅 사례 ── */
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.case-card{position:relative;background:var(--white);border:1px solid var(--line-soft);border-radius:3px;
+  padding:42px 34px;display:flex;flex-direction:column;overflow:hidden;
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.case-card::after{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:var(--gold);
+  transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.case-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-md)}
+.case-card:hover::after{transform:scaleX(1)}
+.case-card .cc-type{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold-deep)}
+.case-card h4{font-family:var(--serif);font-weight:500;font-size:24px;line-height:1.3;letter-spacing:-.015em;margin:16px 0 0}
+.case-card .cc-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.case-card .cc-meta span{font-size:11.5px;color:var(--muted);border:1px solid var(--line);padding:6px 11px;border-radius:2px}
+.case-card p{font-size:14px;color:var(--muted);line-height:1.82;margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
+.case-card .cc-scope{margin-top:auto;padding-top:22px;font-size:12px;color:var(--gold-deep);font-weight:700;letter-spacing:.06em}
+
+/* ── 후기 ── */
+.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.quote-card{background:rgba(246,241,232,.05);border:1px solid var(--line-dark);border-radius:3px;padding:42px 34px;
+  display:flex;flex-direction:column;transition:border-color .45s var(--ease),background .45s var(--ease),transform .45s var(--ease)}
+.quote-card:hover{border-color:rgba(198,167,106,.42);background:rgba(198,167,106,.05);transform:translateY(-5px)}
+.quote-card .qc-mark{font-family:var(--serif);font-size:46px;line-height:.7;color:var(--gold);opacity:.85}
+.quote-card blockquote{font-size:15px;color:rgba(246,241,232,.9);line-height:1.85;margin:22px 0 0;flex:1}
+.quote-card .qc-by{margin-top:26px;padding-top:20px;border-top:1px solid var(--line-dark)}
+.quote-card .qc-by b{display:block;font-size:13.5px;color:var(--ivory);font-weight:700}
+.quote-card .qc-by span{display:block;font-size:12px;color:var(--muted-light);margin-top:5px}
+
+/* ── 대표 컨설턴트 ── */
+.profile{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
+.profile-visual{position:relative;aspect-ratio:4/5;background:var(--beige);border:1px solid var(--line-gold);border-radius:3px;
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+.profile-visual::before{content:"";position:absolute;inset:14px;border:1px solid var(--line-gold);pointer-events:none;border-radius:2px}
+.profile-visual img{width:100%;height:100%;object-fit:cover}
+.profile-visual .pv-mark{font-family:var(--serif);font-size:96px;color:var(--gold-deep);opacity:.34;line-height:1}
+.profile h3{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.2vw,40px);letter-spacing:-.02em;margin-top:16px}
+.profile .pf-role{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-top:14px}
+.profile .pf-bio{font-size:15.5px;color:var(--muted);line-height:1.95;margin-top:26px}
+.profile .pf-list{margin-top:30px;border-top:1px solid var(--line)}
+.profile .pf-list li{display:flex;gap:13px;font-size:14.2px;color:var(--charcoal);padding:14px 0;border-bottom:1px solid var(--line-soft);line-height:1.6}
+.profile .pf-list li svg{flex-shrink:0;margin-top:5px;color:var(--gold)}
+
+/* ── 작업 원칙 ── */
+.principle-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 72px;border-top:1px solid var(--line)}
+.principle{padding:38px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:52px 1fr;gap:22px;align-items:start}
+.principle .pn{font-family:var(--serif);font-size:26px;color:var(--gold);line-height:1}
+.principle h4{font-size:17px;font-weight:700;letter-spacing:-.008em}
+.principle p{font-size:14px;color:var(--muted);line-height:1.85;margin-top:10px}
+
+@media (max-width:1024px){
+  .deliver-grid,.case-grid,.quote-grid{grid-template-columns:repeat(2,1fr)}
+  .profile{grid-template-columns:1fr;gap:44px}
+  .profile-visual{max-width:340px}
+  .principle-grid{grid-template-columns:1fr;gap:0}
+  .tl-row{grid-template-columns:110px 1fr;gap:24px}
+}
+@media (max-width:680px){
+  .deliver-grid,.case-grid,.quote-grid{grid-template-columns:1fr}
+  .deliver-card,.case-card,.quote-card{padding:34px 26px}
+  .tl-row{grid-template-columns:1fr;gap:8px}
+  .tl-row .tl-when{font-size:17px}
+  .deliver-note{padding:26px 22px}
+}

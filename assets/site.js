@@ -178,7 +178,93 @@
     });
   });
 
-  /* ── 9. 연도 ────────────────────────────────── */
+  /* ── 9. 실적·신뢰 콘텐츠 렌더링 ────────────────
+     config.js 의 CASE_STUDIES / TESTIMONIALS / CONSULTANT 를 그립니다.
+     데이터가 비어 있으면 섹션을 통째로 숨깁니다 — 빈 껍데기나
+     자리표시자가 실제 사이트에 노출되지 않도록. */
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  // 섹션 표시/숨김 — [data-collapsible="키"] 로 표시된 섹션을 토글
+  function toggleSection(key, show) {
+    document.querySelectorAll('[data-collapsible="' + key + '"]').forEach(function (el) {
+      if (show) { el.removeAttribute('hidden'); } else { el.setAttribute('hidden', ''); }
+    });
+  }
+
+  var CHECK = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12.5l5.5 5.5L20 6.5"/></svg>';
+
+  // (a) 컨설팅 사례
+  var cases = (typeof CASE_STUDIES !== 'undefined' && Array.isArray(CASE_STUDIES)) ? CASE_STUDIES : [];
+  var caseWrap = document.getElementById('caseGrid');
+  if (caseWrap) {
+    toggleSection('cases', cases.length > 0);
+    caseWrap.innerHTML = cases.map(function (c) {
+      var meta = (c.meta || []).map(function (m) { return '<span>' + esc(m) + '</span>'; }).join('');
+      return '<article class="case-card reveal">' +
+        (c.type ? '<span class="cc-type">' + esc(c.type) + '</span>' : '') +
+        '<h4>' + esc(c.title) + '</h4>' +
+        (meta ? '<div class="cc-meta">' + meta + '</div>' : '') +
+        (c.body ? '<p>' + esc(c.body) + '</p>' : '') +
+        (c.scope ? '<p class="cc-scope">' + esc(c.scope) + '</p>' : '') +
+        '</article>';
+    }).join('');
+  }
+
+  // (b) 원장님 후기
+  var quotes = (typeof TESTIMONIALS !== 'undefined' && Array.isArray(TESTIMONIALS)) ? TESTIMONIALS : [];
+  var quoteWrap = document.getElementById('quoteGrid');
+  if (quoteWrap) {
+    toggleSection('testimonials', quotes.length > 0);
+    quoteWrap.innerHTML = quotes.map(function (q) {
+      return '<figure class="quote-card reveal">' +
+        '<span class="qc-mark" aria-hidden="true">&ldquo;</span>' +
+        '<blockquote>' + esc(q.quote) + '</blockquote>' +
+        '<figcaption class="qc-by"><b>' + esc(q.name) + '</b>' +
+        (q.role ? '<span>' + esc(q.role) + '</span>' : '') + '</figcaption>' +
+        '</figure>';
+    }).join('');
+  }
+
+  // (c) 대표 컨설턴트
+  var who = (typeof CONSULTANT !== 'undefined') ? CONSULTANT : null;
+  var profWrap = document.getElementById('profileBody');
+  if (profWrap) {
+    var hasProfile = !!(who && who.name);
+    toggleSection('consultant', hasProfile);
+    if (hasProfile) {
+      var initial = String(who.name).trim().charAt(0);
+      var visual = who.photo
+        ? '<img src="' + esc(who.photo) + '" alt="' + esc(who.name) + '" />'
+        : '<span class="pv-mark" aria-hidden="true">' + esc(initial) + '</span>';
+      var points = (who.points || []).map(function (p) {
+        return '<li>' + CHECK + esc(p) + '</li>';
+      }).join('');
+      profWrap.innerHTML =
+        '<div class="profile-visual reveal">' + visual + '</div>' +
+        '<div class="reveal d1">' +
+          '<span class="eyebrow">Lead Consultant</span>' +
+          '<h3>' + esc(who.name) + '</h3>' +
+          (who.role ? '<p class="pf-role">' + esc(who.role) + '</p>' : '') +
+          (who.bio ? '<p class="pf-bio">' + esc(who.bio) + '</p>' : '') +
+          (points ? '<ul class="pf-list">' + points + '</ul>' : '') +
+        '</div>';
+    }
+  }
+
+  // 새로 그려진 .reveal 요소도 등장 애니메이션 대상에 포함
+  if ('IntersectionObserver' in window) {
+    document.querySelectorAll('.reveal:not(.in)').forEach(function (el) {
+      if (!el.dataset.observed) { el.dataset.observed = '1'; io.observe(el); }
+    });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ── 10. 연도 ───────────────────────────────── */
   var yr = document.getElementById('yr');
   if (yr) yr.textContent = new Date().getFullYear();
 })();

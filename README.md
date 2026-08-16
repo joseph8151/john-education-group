@@ -15,6 +15,7 @@
 |---|---|
 | `index.html` | 메인 페이지 — Hero / Why / 대상 / What We Build / 교육사업 전문성 / 브랜드 모델 / 패키지 / 월 운영지원 / ROI / Before·After / Process / FAQ / 상담폼 / Final CTA |
 | `services.html` | What We Build 상세 — 7개 구축 영역별 심화 설명 |
+| `cases.html` | Our Work — 산출물 목록, 프로젝트 진행 방식, 컨설팅 사례, 후기, 대표 컨설턴트, 작업 원칙 |
 | `packages.html` | 컨설팅 패키지 및 비용 상세 — START / LAUNCH / PREMIUM, 월 운영지원, 비용 FAQ |
 | `brand-models.html` | 구축 가능한 10가지 교육 브랜드 모델 상세 |
 | `contact.html` | 상담 신청 전용 페이지 |
@@ -43,6 +44,28 @@ var SITE_CONFIG = { representative: '…', bizRegNo: '…', email: '…', hours:
 - **사업자 정보** — `SITE_CONFIG` 의 빈 항목은 화면에 노출되지 않고 자동으로 숨겨집니다.
 - **도메인** — `canonical`, `og:url`, `robots.txt`, `sitemap.xml` 의 `johneducationgroup.com`
   을 실제 도메인으로 교체하세요.
+
+## 📌 실적 · 신뢰 콘텐츠 (사례 · 후기 · 컨설턴트)
+
+`cases.html` 의 아래 세 섹션은 **`assets/config.js` 의 데이터로 그려지며, 비어 있으면 섹션이
+사이트에서 통째로 사라집니다.** 지금은 셋 다 비어 있는 상태로 배포됩니다.
+
+| 변수 | 섹션 | 기본값 |
+|---|---|---|
+| `CASE_STUDIES` | 컨설팅 사례 (`cases.html#cases`) | `[]` — 숨김 |
+| `TESTIMONIALS` | 원장님 후기 (`cases.html#testimonials`, `index.html#testimonials`) | `[]` — 숨김 |
+| `CONSULTANT` | 대표 컨설턴트 (`cases.html#consultant`) | `null` — 숨김 |
+
+각 변수의 입력 형식은 `assets/config.js` 주석에 예시와 함께 적어두었습니다.
+
+> ⚠️ **없는 사례나 후기를 지어내 채우지 마세요.**
+> 허위·과장 광고는 표시광고법 위반 소지가 있고, 컨설팅 회사가 신뢰를 잃는 가장 빠른 길입니다.
+> 사례는 고객사 동의를 받아 `"서울 강남 · 초등 영어"` 처럼 익명 처리하는 것을 권장하며,
+> 후기는 실제로 받은 원문을 게재 동의를 받은 뒤에만 올리세요.
+> `"매출 3배"` 같은 수치는 근거 자료를 보관할 수 있을 때만 사용하세요.
+
+실적이 쌓이기 전까지는, 지어내지 않고도 신뢰를 만드는 콘텐츠가 이미 채워져 있습니다 —
+**산출물 목록**(`#deliverables`), **프로젝트 진행 방식**(`#how`), **작업 원칙**(`#principles`).
 
 ## 전환(Conversion) 설계
 
