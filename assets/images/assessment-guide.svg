@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" fill="none">
+  <rect width="300" height="400" fill="#E7EFF3"/>
+  <!-- clipboard -->
+  <rect x="70" y="90" width="160" height="220" rx="6" fill="#F3EEE1" stroke="#22262C" stroke-width="2.2"/>
+  <rect x="118" y="78" width="64" height="22" rx="4" fill="#22262C"/>
+  <!-- checklist rows -->
+  <g stroke="#22262C" stroke-width="1.8">
+    <rect x="92" y="130" width="16" height="16" fill="#3E6E8E"/>
+    <rect x="92" y="166" width="16" height="16" fill="#3E6E8E"/>
+    <rect x="92" y="202" width="16" height="16" fill="none"/>
+    <rect x="92" y="238" width="16" height="16" fill="none"/>
+  </g>
+  <path d="M95 138 l4 4 l8 -9" stroke="#F3EEE1" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M95 174 l4 4 l8 -9" stroke="#F3EEE1" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="122" y1="138" x2="204" y2="138" stroke="#22262C" stroke-width="1.4" opacity=".6"/>
+  <line x1="122" y1="174" x2="196" y2="174" stroke="#22262C" stroke-width="1.4" opacity=".6"/>
+  <line x1="122" y1="210" x2="200" y2="210" stroke="#22262C" stroke-width="1.4" opacity=".6"/>
+  <line x1="122" y1="246" x2="188" y2="246" stroke="#22262C" stroke-width="1.4" opacity=".6"/>
+  <!-- star rating -->
+  <g fill="#D9A62E">
+    <path d="M100 280 l4 8 l9 1 l-6.5 6.5 l1.5 9 l-8 -4.5 l-8 4.5 l1.5 -9 l-6.5 -6.5 l9 -1 z"/>
+    <path d="M132 280 l4 8 l9 1 l-6.5 6.5 l1.5 9 l-8 -4.5 l-8 4.5 l1.5 -9 l-6.5 -6.5 l9 -1 z"/>
+    <path d="M164 280 l4 8 l9 1 l-6.5 6.5 l1.5 9 l-8 -4.5 l-8 4.5 l1.5 -9 l-6.5 -6.5 l9 -1 z"/>
+  </g>
+</svg>

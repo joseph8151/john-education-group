@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" fill="none">
+  <rect width="400" height="440" fill="#F3EEE1"/>
+  <!-- small window -->
+  <rect x="60" y="50" width="110" height="130" stroke="#22262C" stroke-width="2.5"/>
+  <line x1="115" y1="50" x2="115" y2="180" stroke="#22262C" stroke-width="1.8"/>
+  <line x1="60" y1="115" x2="170" y2="115" stroke="#22262C" stroke-width="1.8"/>
+  <rect x="62" y="52" width="51" height="61" fill="#E7EFF3"/>
+  <rect x="117" y="52" width="51" height="61" fill="#E7EFF3" opacity=".7"/>
+  <!-- small bookshelf -->
+  <rect x="260" y="70" width="80" height="150" stroke="#22262C" stroke-width="2.2"/>
+  <line x1="260" y1="120" x2="340" y2="120" stroke="#22262C" stroke-width="1.6"/>
+  <line x1="260" y1="170" x2="340" y2="170" stroke="#22262C" stroke-width="1.6"/>
+  <rect x="266" y="80" width="9" height="34" fill="#6E9CC0"/>
+  <rect x="278" y="82" width="9" height="32" fill="#3E6E8E"/>
+  <rect x="290" y="78" width="9" height="36" fill="#D9A62E"/>
+  <rect x="266" y="128" width="9" height="36" fill="#3E6E8E"/>
+  <rect x="278" y="130" width="9" height="34" fill="#6E9CC0"/>
+  <!-- compact desk + single chair -->
+  <line x1="70" y1="300" x2="220" y2="300" stroke="#22262C" stroke-width="2.5"/>
+  <line x1="82" y1="300" x2="82" y2="350" stroke="#22262C" stroke-width="2.5"/>
+  <line x1="208" y1="300" x2="208" y2="350" stroke="#22262C" stroke-width="2.5"/>
+  <rect x="108" y="272" width="46" height="24" fill="#F3EEE1" stroke="#22262C" stroke-width="1.8"/>
+  <path d="M170 380 q-2 -34 22 -34 q24 0 22 34 z" fill="#D9A62E" opacity=".9" stroke="#22262C" stroke-width="1.8"/>
+  <path d="M180 346 h24" stroke="#22262C" stroke-width="1.5"/>
+  <!-- floor -->
+  <line x1="0" y1="392" x2="400" y2="392" stroke="#22262C" stroke-width="2"/>
+  <!-- small potted plant -->
+  <path d="M330 350 q-14 -16 0 -30 q14 14 0 30 z" fill="#6E9CC0"/>
+  <path d="M316 350 h28 l-4 24 h-20 z" stroke="#22262C" stroke-width="1.8" fill="#F3EEE1"/>
+</svg>
