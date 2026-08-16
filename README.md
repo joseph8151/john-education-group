@@ -49,12 +49,12 @@ var SITE_CONFIG = { representative: '…', bizRegNo: '…', email: '…', hours:
 ## 📌 실적 · 신뢰 콘텐츠 (사례 · 후기 · 컨설턴트)
 
 `cases.html` 의 아래 세 섹션은 **`assets/config.js` 의 데이터로 그려지며, 비어 있으면 섹션이
-사이트에서 통째로 사라집니다.** 지금은 셋 다 비어 있는 상태로 배포됩니다.
+사이트에서 통째로 사라집니다.**
 
 | 변수 | 섹션 | 기본값 |
 |---|---|---|
 | `CASE_STUDIES` | 컨설팅 사례 (`cases.html#cases`) | `[]` — 숨김 |
-| `TESTIMONIALS` | 원장님 후기 (`cases.html#testimonials`, `index.html#testimonials`) | `[]` — 숨김 |
+| `TESTIMONIALS` | 원장님 후기 (`cases.html#testimonials`, `index.html#testimonials`) | **후기 20개 입력됨** (기본 6개 노출 + 더 보기) |
 | `CONSULTANT` | 대표 컨설턴트 (`cases.html#consultant`) | `null` — 숨김 |
 
 각 변수의 입력 형식은 `assets/config.js` 주석에 예시와 함께 적어두었습니다.

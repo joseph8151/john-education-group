@@ -214,19 +214,39 @@
     }).join('');
   }
 
-  // (b) 원장님 후기
+  // (b) 원장님 후기 — 기본 6개만 노출하고 나머지는 "더 보기"로 펼침
+  var QUOTES_VISIBLE = 6;
   var quotes = (typeof TESTIMONIALS !== 'undefined' && Array.isArray(TESTIMONIALS)) ? TESTIMONIALS : [];
   var quoteWrap = document.getElementById('quoteGrid');
   if (quoteWrap) {
     toggleSection('testimonials', quotes.length > 0);
-    quoteWrap.innerHTML = quotes.map(function (q) {
-      return '<figure class="quote-card reveal">' +
+    quoteWrap.innerHTML = quotes.map(function (q, i) {
+      var hidden = i >= QUOTES_VISIBLE ? ' quote-hidden' : '';
+      return '<figure class="quote-card reveal' + hidden + '">' +
         '<span class="qc-mark" aria-hidden="true">&ldquo;</span>' +
         '<blockquote>' + esc(q.quote) + '</blockquote>' +
         '<figcaption class="qc-by"><b>' + esc(q.name) + '</b>' +
         (q.role ? '<span>' + esc(q.role) + '</span>' : '') + '</figcaption>' +
         '</figure>';
     }).join('');
+
+    var moreWrap = document.getElementById('quoteMore');
+    if (moreWrap) {
+      var rest = quotes.length - QUOTES_VISIBLE;
+      if (rest > 0) {
+        moreWrap.innerHTML = '<button type="button" class="btn btn-ghost-light" id="quoteMoreBtn">' +
+          '<span>후기 ' + rest + '개 더 보기</span></button>';
+        document.getElementById('quoteMoreBtn').addEventListener('click', function () {
+          quoteWrap.querySelectorAll('.quote-hidden').forEach(function (el) {
+            el.classList.remove('quote-hidden');
+            el.classList.add('in');
+          });
+          moreWrap.style.display = 'none';
+        });
+      } else {
+        moreWrap.style.display = 'none';
+      }
+    }
   }
 
   // (c) 대표 컨설턴트

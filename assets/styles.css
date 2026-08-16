@@ -753,3 +753,7 @@ footer{background:var(--charcoal);color:var(--ivory);padding:96px 0 44px}
 
 @media (max-width:1024px){ .dive-art{max-width:200px} }
 @media (max-width:680px){ .dive-art,.spec-art{max-width:100%} }
+
+/* 후기 "더 보기" — 기본 6개 노출, 나머지는 펼치기 */
+.quote-card.quote-hidden{display:none}
+.quote-more{text-align:center;margin-top:44px}
