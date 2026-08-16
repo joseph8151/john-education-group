@@ -115,8 +115,8 @@ header.scrolled{border-bottom-color:var(--line)}
 .ts-stat{display:flex;flex-direction:column}
 .ts-num{font-family:var(--serif);font-size:42px;color:var(--gold-2);line-height:1}
 .ts-label{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;font-weight:600;white-space:nowrap}
-.ts-keywords{font-size:12.5px;color:var(--muted);border-left:1px solid var(--line);padding-left:44px;line-height:1.9}
-.ts-concept{text-align:right;border-left:1px solid var(--line);padding-left:44px}
+.ts-keywords{font-size:12.5px;color:var(--muted);border-left:1px solid var(--line);padding-left:44px;line-height:1.9;min-width:0}
+.ts-concept{text-align:right;border-left:1px solid var(--line);padding-left:44px;min-width:0}
 .ts-eyebrow{display:block;font-family:var(--serif);font-size:19px;color:var(--espresso);font-style:italic;line-height:1.3}
 .ts-eyebrow.gold{color:var(--gold-2)}
 .ts-flow{display:block;font-size:10.5px;letter-spacing:.08em;color:var(--muted);margin-top:10px;text-transform:uppercase}
@@ -454,7 +454,9 @@ footer .trust-item .k{color:var(--gold)}
 
 /* ── calculator ── */
 .calc-panel{border:1px solid var(--line-gold);padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.calc-inputs{min-width:0}
 .calc-inputs .fld{margin-bottom:22px}
+.calc-result{min-width:0}
 .calc-result{text-align:center;background:var(--cream);padding:36px 24px}
 .calc-result .cr-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-2);font-weight:700}
 .calc-result .cr-value{font-family:var(--serif);font-size:clamp(32px,4vw,44px);color:var(--espresso);margin:14px 0 20px}
@@ -521,9 +523,11 @@ footer .trust-item .k{color:var(--gold)}
   .burger{display:block}
 }
 @media(max-width:960px){
-  .hero-grid,.contact-grid,.page-hero-grid{grid-template-columns:1fr;gap:44px}
+  .hero-grid,.contact-grid,.page-hero-grid,.add-program{grid-template-columns:1fr;gap:44px}
   .trust-strip-grid{grid-template-columns:1fr 1fr 1fr;row-gap:28px}
   .ts-keywords,.ts-concept{grid-column:1 / -1;border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:24px;text-align:left}
+  .ts-stat{min-width:0}
+  .ts-label{white-space:normal}
   .aud-grid{grid-template-columns:1fr 1fr}
   .dream-split{grid-template-columns:1fr}
   .compare-row,.compare-head{grid-template-columns:1fr}
@@ -564,7 +568,8 @@ footer .trust-item .k{color:var(--gold)}
   .guide-panel{padding:44px 26px}
   form.card{padding:30px}
   .keyword-row span{padding:16px 18px;font-size:11px}
-  .trust-strip-grid{grid-template-columns:1fr 1fr}
+  .trust-strip-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .ts-keywords,.ts-concept{grid-column:1 / -1}
   .system-grid{grid-template-columns:1fr}
   .prep-grid{grid-template-columns:1fr}
   .exec-list{grid-template-columns:1fr}
@@ -576,4 +581,9 @@ footer .trust-item .k{color:var(--gold)}
   .journey-arrow{width:1px;height:24px;margin:0 0 0 3px}
   .arc-track{grid-template-columns:1fr;gap:0}
   .arc-stage{padding:18px 0 18px 20px;border-top:none;border-left:1px solid var(--line-gold)}
+}
+@media(max-width:340px){
+  .logo span{display:none}
+  .logo b{font-size:11.5px}
+  .nav{gap:12px}
 }
