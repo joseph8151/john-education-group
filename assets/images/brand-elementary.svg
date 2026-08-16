@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#E7EFF3"/>
+  <line x1="0" y1="252" x2="400" y2="252" stroke="#22262C" stroke-width="2"/>
+  <!-- desk -->
+  <line x1="70" y1="222" x2="330" y2="222" stroke="#22262C" stroke-width="2.5"/>
+  <line x1="90" y1="222" x2="90" y2="252" stroke="#22262C" stroke-width="2.5"/>
+  <line x1="310" y1="222" x2="310" y2="252" stroke="#22262C" stroke-width="2.5"/>
+  <!-- child reading, seated -->
+  <circle cx="190" cy="120" r="25" stroke="#22262C" stroke-width="2.5"/>
+  <path d="M166 118 q24 -32 48 0" stroke="#22262C" stroke-width="2.5"/>
+  <path d="M158 222 q6 -66 42 -70 q36 4 42 70 z" fill="#6E9CC0" stroke="#22262C" stroke-width="2"/>
+  <!-- open book -->
+  <path d="M150 214 q40 -14 80 0 v10 q-40 -12 -80 0 z" fill="#F3EEE1" stroke="#22262C" stroke-width="2"/>
+  <line x1="190" y1="212" x2="190" y2="222" stroke="#22262C" stroke-width="1.2"/>
+  <!-- backpack -->
+  <rect x="250" y="180" width="46" height="56" rx="6" fill="#D9A62E" stroke="#22262C" stroke-width="2"/>
+  <rect x="266" y="170" width="14" height="18" rx="4" fill="#D9A62E" stroke="#22262C" stroke-width="2"/>
+  <line x1="258" y1="200" x2="288" y2="200" stroke="#22262C" stroke-width="1.5"/>
+  <!-- pencil case -->
+  <rect x="110" y="228" width="46" height="16" rx="8" fill="#3E6E8E" stroke="#22262C" stroke-width="1.5"/>
+  <!-- floating ABC -->
+  <text x="320" y="90" font-family="Georgia,serif" font-style="italic" font-size="28" fill="#3E6E8E" opacity=".8">Aa</text>
+  <text x="60" y="80" font-family="Georgia,serif" font-style="italic" font-size="22" fill="#D9A62E" opacity=".8">Bb</text>
+</svg>
