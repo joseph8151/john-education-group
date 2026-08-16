@@ -1,31 +1,97 @@
 # JOHN EDUCATION GROUP — 공식 웹사이트
 
-가맹점 · 학원 원장 · 공부방 원장 · 신규 교육사업 창업 희망자 모집을 목적으로 하는
-**존 에듀케이션 그룹**의 프랜차이즈 본사 홈페이지입니다. 순수 HTML/CSS/JS 로 제작되어
-빌드 도구 없이 바로 배포할 수 있습니다.
+**Education Business Consulting & Brand Development**
 
-## 파일
-- `index.html` — 메인 홈페이지 (Hero, 5개 교육 브랜드, Find Your Model 추천 UI, 가맹 절차, FAQ, 상담폼 등 전체 섹션)
-- `franchise.html` — 프랜차이즈 종합 안내 (Why Partner, 가맹 절차, 사업 유연성, 매출 모델, 브랜드 탐색)
-- `academy-owners.html` — 기존 학원 원장님을 위한 Add a Program 안내
-- `study-room.html` — 공부방·소형 교습소 모델 안내
-- `contact.html` — 가맹 상담 신청 전용 페이지
-- `prep-academy.html` / `early-childhood.html` / `elementary-english.html` / `adult-language.html` / `music-academy.html` — 5개 교육 브랜드 상세페이지
-- `assets/styles.css` / `assets/site.js` — 전 페이지 공용 스타일·스크립트 (헤더 스크롤, 모바일 메뉴, 스크롤 등장, FAQ 아코디언, 상담폼 검증)
-- `robots.txt` / `sitemap.xml` — 검색엔진용
-- `wrangler.jsonc` — Cloudflare 독립 배포 설정
-- `.assetsignore` — 배포 제외 파일 목록
+대한민국 학원 원장·예비 원장·교육사업자를 위한 **프리미엄 교육사업 컨설팅 회사** 홈페이지입니다.
+순수 HTML/CSS/JS 로 제작되어 빌드 도구 없이 바로 배포할 수 있습니다.
 
-## 배포 전 채워야 하는 값 (각 페이지의 `[ ]` 부분)
-- 전화번호 / 이메일 / 본사 주소 (Contact 섹션, 모든 페이지 공통)
-- 상담폼 `action` — 전용 Formspree 주소 (현재 `xxxxxxxx` 자리표시자, 모든 페이지의 `#franchiseForm`)
-- 도메인 — `canonical`, `og:url`, `robots.txt`, `sitemap.xml` 의 `johneducationgroup.com` 을 실제 도메인으로 교체
-- 사업자 정보 (푸터, 모든 페이지 공통)
-- `.photo` 영역 — 현재는 실사진 대신 브랜드 톤의 추상 placeholder 입니다. 실사진 준비 후 교체 필요
+> 포지셔닝: 조언만 제공하는 컨설팅이 아니라, 아이디어부터 브랜드 런칭·홈페이지·커리큘럼·강사 채용·
+> 마케팅·상담 시스템까지 **교육사업에 필요한 모든 것을 구축하는 실행형 컨설팅 회사**.
+> 프랜차이즈 가맹점 모집 성격의 콘텐츠는 사이트 전체에서 제거되었습니다.
+
+## 파일 구조
+
+| 파일 | 내용 |
+|---|---|
+| `index.html` | 메인 페이지 — Hero / Why / 대상 / What We Build / 교육사업 전문성 / 브랜드 모델 / 패키지 / 월 운영지원 / ROI / Before·After / Process / FAQ / 상담폼 / Final CTA |
+| `services.html` | What We Build 상세 — 7개 구축 영역별 심화 설명 |
+| `packages.html` | 컨설팅 패키지 및 비용 상세 — START / LAUNCH / PREMIUM, 월 운영지원, 비용 FAQ |
+| `brand-models.html` | 구축 가능한 10가지 교육 브랜드 모델 상세 |
+| `contact.html` | 상담 신청 전용 페이지 |
+| `assets/config.js` | **관리자 설정 파일** — 전화번호, 폼 접수 주소, 사업자 정보 |
+| `assets/styles.css` | 전 페이지 공용 디자인 시스템 |
+| `assets/site.js` | 헤더 / 모바일 메뉴 / 스크롤 등장 / FAQ / 전화링크 주입 / 플로팅 CTA / 상담폼 |
+| `robots.txt` · `sitemap.xml` | 검색엔진용 |
+| `wrangler.jsonc` · `.assetsignore` | Cloudflare 독립 배포 설정 |
+
+## ⚙️ 배포 전 채워야 하는 값
+
+모든 설정은 **`assets/config.js` 한 파일**에서 관리합니다.
+
+```js
+var CONSULTING_PHONE     = '02-1234-5678';   // 화면에 표시되는 전화번호
+var CONSULTING_PHONE_TEL = '+82212345678';   // 실제 연결되는 번호 (tel: 링크)
+var CONSULTING_FORM_ACTION = 'https://formspree.io/f/xxxxxxxx';  // 폼 접수 주소
+var SITE_CONFIG = { representative: '…', bizRegNo: '…', email: '…', hours: '…' };
+```
+
+- **전화번호** — `CONSULTING_PHONE` 값을 채우면 헤더 / 히어로 / 플로팅 CTA / 모바일 하단바 /
+  최종 CTA / 푸터의 **모든 "전화 상담" 버튼**에 자동 반영되고, 모바일에서는 `tel:` 링크로
+  바로 전화가 연결됩니다. 비워두면 전화 버튼은 상담폼으로 연결됩니다.
+- **상담폼 접수 주소** — `CONSULTING_FORM_ACTION` 에 Formspree 등의 endpoint 를 넣으세요.
+  각 HTML 의 `action` 속성보다 이 값이 우선 적용됩니다.
+- **사업자 정보** — `SITE_CONFIG` 의 빈 항목은 화면에 노출되지 않고 자동으로 숨겨집니다.
+- **도메인** — `canonical`, `og:url`, `robots.txt`, `sitemap.xml` 의 `johneducationgroup.com`
+  을 실제 도메인으로 교체하세요.
+
+## 전환(Conversion) 설계
+
+모든 페이지의 최종 목표는 **"상담 신청"** 과 **"전화 상담"** 두 가지로 통일되어 있습니다.
+
+```
+홈페이지 방문 → 컨설팅 내용 확인 → 가격 확인 → 성공 가능성 확인
+→ 상담폼 제출 → 전화 상담 → 맞춤 제안 → 계약
+```
+
+- 온라인 즉시 결제 기능은 **의도적으로 넣지 않았습니다.** 상담을 통해 프로젝트 범위를
+  확정한 뒤 계약하는 구조입니다.
+- PC 는 우측 하단 플로팅 CTA(전화 상담 / 컨설팅 문의), 모바일은 하단 고정 CTA 2개가
+  항상 노출됩니다.
+- `packages.html` 의 패키지 CTA 는 `contact.html?package=LAUNCH` 형태로 연결되어
+  상담폼의 "관심 패키지" 항목이 자동 선택됩니다.
+
+## 디자인
+
+글로벌 컨설팅 회사 + 미국 프리미엄 교육기업의 톤. 큰 타이포그래피와 넓은 여백 중심.
+
+| 색상 | 값 | 용도 |
+|---|---|---|
+| Champagne Ivory | `#F6F1E8` | 메인 배경 |
+| Deep Charcoal | `#202224` | 본문 텍스트 · 다크 섹션 |
+| Champagne Gold | `#C6A76A` | 액센트 (전체의 10~15%) |
+| Soft Beige | `#E9E0D2` | 보조 배경 |
+| White | `#FFFFFF` | 카드 · 폼 |
+
+서체는 Cormorant Garamond(영문 세리프) + Pretendard(국문)를 사용합니다.
 
 ## ⚠️ 배포 규칙 (중요 — 사이트 충돌 방지)
+
 이 사이트는 **자기만의 Cloudflare 서버(Worker)** 에만 배포되어야 합니다.
 
 - 이 저장소의 Worker 이름 = **`john-education-group`** (`wrangler.jsonc` 참고)
-- **절대** `blossom-books`, `john-prep-tutoring` 등 다른 사이트의 서버에 배포하지 마세요. 이름이 겹치면 그 사이트를 덮어씁니다.
-- 대시보드에서 연결할 때 새 프로젝트 이름을 반드시 `john-education-group` 로 두세요 (기존 프로젝트에 연결 ❌).
+- **절대** `blossom-books`, `john-prep-tutoring` 등 다른 사이트의 서버에 배포하지 마세요.
+  이름이 겹치면 그 사이트를 덮어씁니다.
+- 대시보드에서 연결할 때 새 프로젝트 이름을 반드시 `john-education-group` 로 두세요
+  (기존 프로젝트에 연결 ❌).
+
+## 개편 이력 (이전 버전 대비)
+
+프랜차이즈 본사 성격의 아래 페이지들은 **삭제**되었습니다.
+기존 URL 이 검색엔진에 색인되어 있었다면 배포 후 리디렉션 설정을 권장합니다.
+
+| 삭제된 페이지 | 권장 리디렉션 |
+|---|---|
+| `franchise.html` | `/services.html` |
+| `academy-owners.html` | `/services.html` |
+| `study-room.html` | `/brand-models.html` |
+| `prep-academy.html` · `early-childhood.html` · `elementary-english.html` · `adult-language.html` · `music-academy.html` | `/brand-models.html` |
